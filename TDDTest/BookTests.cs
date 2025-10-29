@@ -9,7 +9,7 @@ public class BookTests
     public void Book_Should_Have_A_Title()
     {
         var book = new Book("C# in Depth", "Jon Skeet", 2019);
-        var title = book.GetTitle;
+        var title = book.Title;
 
         Assert.That(title, Is.EqualTo("C# in Depth"));
     }
@@ -18,7 +18,7 @@ public class BookTests
     public void Book_Should_Have_A_Author()
     {
         var book = new Book("C# in Depth", "Jon Skeet", 2019);
-        var author = book.GetAuthor;
+        var author = book.Author;
 
         Assert.That(author, Is.EqualTo("Jon Skeet"));
     }
@@ -27,7 +27,7 @@ public class BookTests
     public void Book_Should_Have_A_Year()
     {
         var book = new Book("C# in Depth", "Jon Skeet", 2019);
-        var year = book.GetYear;
+        var year = book.Year;
 
         Assert.That(year, Is.EqualTo(2019));
     }
