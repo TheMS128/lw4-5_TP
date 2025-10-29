@@ -6,8 +6,7 @@ public class Library
 
     public void AddBook(Book book)
     {
-        if (_books.Exists(b => b.Title == book.Title && b.Author == book.Author && b.Year == book.Year)) return;
-        _books.Add(book);
+        if (!_books.Exists(b => b.Title == book.Title && b.Author == book.Author && b.Year == book.Year)) _books.Add(book);
     }
 
     public IReadOnlyList<Book> GetBooks() => _books;
