@@ -41,6 +41,6 @@ public class BookTests
         library.AddBook(book1);
         library.AddBook(book2);
 
-        Assert.That(library.GetBooks().Count, Is.EqualTo(1));
+        Assert.That(library.GetAllBooks().Count, Is.EqualTo(1));
     }
 }
