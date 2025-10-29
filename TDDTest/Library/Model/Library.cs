@@ -14,4 +14,9 @@ public class Library
     public Book? FindBookByTitle(string title) => _books.Find(b => b.Title == title);
 
     public void RemoveBook(Book book) => _books.Remove(book);
+    
+    public List<Book> FindBooksByAuthor(string author)
+    {
+        return _books.FindAll(b => b.Author == author);
+    }
 }
