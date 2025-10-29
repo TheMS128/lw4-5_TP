@@ -8,7 +8,7 @@ public class LibraryTests
     [Test]
     public void Library_Should_Add_Books()
     {
-        var library = new Library();
+        var library = new Library.Model.Library();
         var book = new Book("C# in Depth", "Jon Skeet", 2019);
         library.AddBook(book);
 
@@ -18,7 +18,7 @@ public class LibraryTests
     [Test]
     public void Library_Should_Find_Book_By_Title()
     {
-        var library = new Library();
+        var library = new Library.Model.Library();
         var book = new Book("C# in Depth", "Jon Skeet", 2019);
         library.AddBook(book);
         var foundBook = library.FindBookByTitle("C# in Depth");
@@ -29,7 +29,7 @@ public class LibraryTests
     [Test]
     public void Library_Should_Remove_Book()
     {
-        var library = new Library();
+        var library = new Library.Model.Library();
         var book = new Book("C# in Depth", "Jon Skeet", 2019);
         library.AddBook(book);
         library.RemoveBook(book);
