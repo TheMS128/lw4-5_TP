@@ -17,8 +17,5 @@ public class Library
     
     public List<Book> FindBooksByAuthor(string author) => _books.FindAll(b => b.Author == author);
     
-    public List<Book> GetAllBooks()
-    {
-        return _books;
-    }
+    public List<Book> GetMutableBooks() => _books;
 }
