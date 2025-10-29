@@ -173,3 +173,4 @@ C:\Users\1\RiderProjects\TDDTest\TDDTest\obj\Debug\net9.0\refint\TDDTest.dll
 C:\Users\1\RiderProjects\TDDTest\TDDTest\obj\Debug\net9.0\TDDTest.pdb
 C:\Users\1\RiderProjects\TDDTest\TDDTest\obj\Debug\net9.0\TDDTest.genruntimeconfig.cache
 C:\Users\1\RiderProjects\TDDTest\TDDTest\obj\Debug\net9.0\ref\TDDTest.dll
+C:\Users\1\RiderProjects\TDDTest\TDDTest\obj\Debug\net9.0\TDDTest.sourcelink.json
