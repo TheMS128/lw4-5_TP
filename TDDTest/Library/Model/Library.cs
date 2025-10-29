@@ -16,4 +16,6 @@ public class Library
     public void RemoveBook(Book book) => _books.Remove(book);
     
     public List<Book> FindBooksByAuthor(string author) => _books.FindAll(b => b.Author == author);
+    
+    public List<Book> GetMutableBooks() => _books;
 }
