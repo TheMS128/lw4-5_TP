@@ -36,4 +36,18 @@ public class LibraryTests
 
         Assert.That(library.GetBooks().Count, Is.EqualTo(0));
     }
+    
+    [Test]
+    public void Library_Should_Find_Books_By_Author()
+    {
+        var library = new Library.Model.Library();
+        var book1 = new Book("C# in Depth", "Jon Skeet", 2019);
+        var book2 = new Book("Effective C#", "Bill Wagner", 2017);
+        library.AddBook(book1);
+        library.AddBook(book2);
+        var booksByAuthor = library.FindBooksByAuthor("Jon Skeet");
+
+        Assert.That(booksByAuthor.Count, Is.EqualTo(1));
+        Assert.That(booksByAuthor[0].Title, Is.EqualTo("C# in Depth"));
+    }
 }
